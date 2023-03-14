@@ -73,3 +73,55 @@ body{
     background-color: hsl(160, 50%, 80%);
 }
 
+.blob-5{
+    background-color: hsl(130, 50%, 80%);  
+}
+.blob-6{
+    background-color: hsl(250, 50%, 80%);
+}.blob-7{
+    background-color: hsl(300, 50%, 80%);
+}.blob-8{
+    background-color: hsl(70, 50%, 80%);
+}
+
+/* Animation */
+
+.container-menu.active .blob-1 {
+    transition: all 0.2s 0.1s ease-in-out;  /* 0.2s = 200ms d'animation  & 0.1s = 100ms de délai*/
+    left: 100%;
+}
+.container-menu.active .blob-2 {
+    transition: all 0.2s 0.2s ease-in-out;
+    left: 85%;
+    top: 85%;
+}
+.container-menu.active .blob-3 {
+    transition: all 0.2s 0.3s ease-in-out;
+    top: 100%;
+}
+.container-menu.active .blob-4 {
+    transition: all 0.2s 0.4s ease-in-out;
+    left: 15%;
+    top: 85%;
+}
+
+.container-menu.active .blob-5 {
+    transition: all 0.2s 0.5s ease-in-out;  
+    left: 0%;
+    top: 50%;
+}
+.container-menu.active .blob-6 {
+    transition: all 0.2s 0.6s ease-in-out;
+    left: 15%;
+    top: 15%;
+}
+.container-menu.active .blob-7 {
+    transition: all 0.2s 0.7s ease-in-out;
+    left: 50%;
+    top: 0%;
+}
+.container-menu.active .blob-8 {
+    transition: all 0.2s 0.8s ease-in-out;
+    left: 85%;
+    top: 15%;
+}
