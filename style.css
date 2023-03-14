@@ -1,0 +1,75 @@
+*, ::after, ::before{
+    box-sizing: border-box; /* remplis en longuer,largeur et bordures des éléments */
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #333;
+}
+
+.container-menu{
+    width: 300px;
+    height: 300px;
+    position:fixed; /*fixed OR absolute pour suivre ou non le défilement*/
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%); /*-50% sur x ET  sur y*/
+    background: gold;
+}
+
+.btn-menu{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: #f1f1f1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centre le TOUT sur le bouton central */
+    z-index: 20;
+    cursor: pointer; /* Change le curseur au survol 'HOVER' */
+}
+
+.ligne{
+    width:40px;
+    height: 5px;
+    border-radius: 5px;
+    background: #333;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centre la ligne sur le bouton central */
+}
+
+.icone{
+    width: 40px;
+}
+
+.blob{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: #f1f1f1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+/*On centre les icones dans les 'blob'*/
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+}
+
+.blob-1{
+    background-color: hsl(30, 50%, 80%);  /* Hue (0 à 360°)  Saturation = 50% pour des couleurs pastels Lightness à 80%  */
+}
+.blob-2{
+    background-color: hsl(60, 50%, 80%);
+}.blob-3{
+    background-color: hsl(90, 50%, 80%);
+}.blob-4{
+    background-color: hsl(160, 50%, 80%);
+}
+
