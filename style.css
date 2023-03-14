@@ -15,7 +15,7 @@ body{
     top: 40%;
     left: 50%;
     transform: translate(-50%,-50%); /*-50% sur x ET  sur y*/
-    background: gold;
+   /* background: gold;*/   /* Peut être décommenter pour voir la taille et position du menu-radial */
 }
 
 .btn-menu{
@@ -40,7 +40,43 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); /* Centre la ligne sur le bouton central */
+    transition: all 0.1s ease-in-out;
 }
+
+/* Animation menu brger */
+.ligne::before{
+    content: '';
+    position: absolute;
+    bottom: 10px;
+    background: #333;
+    width: 100%;
+    height: 5px;
+    border-radius: 5px;
+    transition: all 0.2s ease-in-out;
+}
+.ligne::after{
+    content: '';
+    position: absolute;
+    top: 10px;
+    background: #333;
+    width: 100%;
+    height: 5px;
+    border-radius: 5px;
+    transition: all 0.2s ease-in-out;
+}
+
+.container-menu.active .ligne::before{
+    transform: translateY(+10px) rotate(-45deg);
+}
+
+.container-menu.active .ligne::after{
+    transform: translateY(-10px) rotate(+45deg);
+}
+
+.container-menu.active .ligne{
+   background: transparent;
+}
+
 
 .icone{
     width: 40px;
